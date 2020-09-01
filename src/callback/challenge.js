@@ -24,6 +24,10 @@ const fetchData = (url_api, callback) => {
   xhttp.send();
 };
 
+// Tomar cantidad de personajes
+// Tomar nombre del primer [0] del personaje
+// Tomar dimension del personaje anterior
+
 fetchData(API, (error1, data1) => {
   if (error1) return console.error(error1);
   fetchData(API + data1.results[0].id, (error2, data2) => {
