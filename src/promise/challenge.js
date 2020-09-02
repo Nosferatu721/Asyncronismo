@@ -10,6 +10,7 @@ fetchData(API)
   })
   .then((data) => {
     console.log(data.name);
+    console.log(data.gender);
     return fetchData(`${data.origin.url}`);
   })
   .then((data) => {
